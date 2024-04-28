@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --border-radius: 0.5rem;
+    --main-color: #F9A825;
+}
+body{
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header {
+    height: 650px;
+    background: url(img/header.jpg) no-repeat center;
+    background-size: cover;
+}
+.header-content {
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.header-wellcome_wrapper{
+    margin-bottom: 0.7rem;
+}
+.header-wellcome{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.header-title_wrapper {
+    margin-bottom: 0.7rem;
+    display: flex;
+    gap: 0.8rem;
+}
+.header-title {
+    color: var(--main-color);
+}
+.header-title__confirm {
+    color: #fff;
+}
+.order-link_wrapper {
+    margin-top: 0.8rem;
+}
+.order-link {
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+}
+.main {
+}
+.story-section{
+    padding: 2.5rem 0;
+    text-align: center;
+}
+.story-imgs {
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(auto-fit, minmax(260px,320px));
+    grid-gap: 0.8rem;
+    margin-top: 2rem;
+}
+.img-wrapper{
+    border-radius: var(--border-radius);
+    height: 14rem;
+}
+.story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.services-section {
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+.section-text__wrapper {
+    font-family: "Candara";
+    color: var(--main-color);
+    position: relative;
+}
+.section-text::before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    background: black;
+}
+.section-text::after{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 130px;
+    position: absolute;
+    right: 35%;
+    top: 50%;
+    background: black;
+}
+.services{
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(3, 25%); */
+    grid-template-columns: repeat(auto-fit,minmax(260px,340px));
+    /* grid-template-rows: repeat(2, 14rem); */
+    margin-top: 2rem;
+    font-family: "Candara";
+    margin-bottom: 2.5rem;
+}
+.service-item {
+    border-radius: 0 2rem;
+}
+.service-img {
+    width: 100%;
+    height: 263px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.service-text{
+    margin-top: 0.7rem;
+}
+.ordering-section {
+    background: url(img/restaurant.jpg) no-repeat center;
+    background-size: cover;
+    padding: 5rem 0;
+}
+.ordering-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.card {
+    display: grid;
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: black;
+    color: #fff;
+    font-family: "Candara";
+}
+.card-title {
+}
+.branches {
+    display: grid;
+    grid-template-rows: 25% 75%;
+    grid-gap: 0.5rem;
+}
+.branches-top {
+    color: var(--main-color);
+    font-family: "Bradley Hand ITC";
+    font-size: 1.2rem;
+}
+.branches-title {
+}
+.branches-bottom {
+}
+.countries {
+}
+.bracket{
+    color: var(--main-color);
+}
+.card-description {
+    font-family: "Bradley Hand ITC";
+}
+.info {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.info-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-family: "Candara";
+}
+.tel-wrapper {
+    display: grid;
+    grid-gap: 0.5rem;
+
+}
+.info-item-title {
+    color: var(--main-color);
+    font-family: "Bradley Hand ITC";
+    font-size: 1.2rem;
+}
+.tel-text {
+    font-weight: bold;
+}
+.email-wrapper {
+    display: grid;
+    grid-gap: 0.5rem;
+}
+.email-text {
+    font-weight: bold;
+}
+.info-gallery {
+    display: grid;
+    width: 962px;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+.info-gallery__img-wrapper {
+    width: 4rem;
+    border-radius: 100%;
+}
+.info-gallery__img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imgs-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.imgs-wrapper img{
+}
